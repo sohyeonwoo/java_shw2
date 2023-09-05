@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class JA0901_06 {
+
+	public static void main(String[] args) {
+		//System.out.println(10/8); =1
+		//System.out.println(10%8); =2
+		Scanner scan = new Scanner(System.in) ;
+		System.out.println("숫자를 입력하세요.");
+		int num = scan.nextInt();
+		
+		int result = num%3; //3의 배수를 찾을때 코드
+		
+		//조건문 
+		if (result==0)
+			System.out.println("3의 배수입니다.");
+		else
+			System.out.println("3의 배수가 아닙니다.");
+		System.out.println("입력한 숫자 : " + num);
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
+
