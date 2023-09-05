@@ -8,14 +8,14 @@ public class J0905_08랜덤숫자맞추기 {
 	   //랜덤 숫자 맞추기 게임
 	public static void main(String[] args) {
 		//랜덤숫자 생성
-		int random = (int)(Math.random()*100)+1;
+		int random = (int)(Math.random()*10)+1;
 		Scanner scan = new Scanner(System.in);
-		
+		int i = 0;
 		System.out.println("임시 : " + random);
 		System.out.println("[숫자 맞추기 게임]");
 		
-		while (true) {
-			System.out.println("1~100 사이의 숫자를 입력하세요");
+		while (i<10) { //true 무한반복
+			System.out.println("1~10 사이의 숫자를 입력하세요");
 			int num = scan.nextInt();
 			if(random == num ) {
 				System.out.println("정답입니다.");
