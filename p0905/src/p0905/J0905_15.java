@@ -15,7 +15,7 @@ public class J0905_15 {
 		while (i<5) {
 			System.out.println("1~10까지의 숫자를 입력하세요");
 			int input = scan.nextInt();
-			save[i] = input;
+			save[i] = random;
 			if(random == input ) {
 				System.out.println("정답입니다.");
 				break;
@@ -25,7 +25,13 @@ public class J0905_15 {
 				System.out.println("더 큽니다.");
 			}
 			
+		
 			
+			for (int j =0;j<i;j++) {
+				System.out.printf("%d " ,i);
+				
+			}
+			i++;
 			
 		}//while
 		
@@ -33,7 +39,7 @@ public class J0905_15 {
 
 		
 		//출력
-		System.out.println("입력한 숫자: ");
+		System.out.println("입력한 숫자: "+random);
 		
 	}//main
 
