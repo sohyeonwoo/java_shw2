@@ -18,7 +18,7 @@ public class J00906_01 {
 //		System.out.println("랜덤 뽑기 : " + num[random1]);
 //		System.out.println("랜덤 뽑기 : " + num[random2]);
 //		System.out.println("랜덤 뽑기 : " + num[random3]);
-//		System.out.println("랜덤 뽑기 : " + num[random4]);
+//		System.out.println("랜덤 뽑기 : " + num[random4]); 
 //		System.out.println("랜덤 뽑기 : " + num[random5]);
 //		System.out.println("랜덤 뽑기 : " + num[random6]);
 		int n=0;

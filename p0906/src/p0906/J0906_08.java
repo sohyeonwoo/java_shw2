@@ -28,7 +28,7 @@ public class J0906_08 {
 			}//for
 			System.out.println( );
 		}//for
-		
+		 
 		
 		
 		//1차원 배열

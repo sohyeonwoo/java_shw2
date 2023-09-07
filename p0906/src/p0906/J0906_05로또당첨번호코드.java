@@ -59,8 +59,8 @@ public class J0906_05로또당첨번호코드 {
 				if(winLotto[i]==myNum[j]) {
 					count++;
 					break; // j
-				}
-			}
+				} 
+			} 
 		}
 		System.out.println();
 		System.out.println("당첨개수 :" + count);

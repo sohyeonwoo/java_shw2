@@ -29,7 +29,7 @@ public class J0906_03성적프로그램 {
 			
 			System.out.println((i + 1) + " 번째 국어점수를 입력하세요 : ");
 			arrKor[i] = scan.nextInt();
-			System.out.println((i + 1) + " 번째 영어점수를 입력하세요 : ");
+			System.out.println((i + 1) + " 번째 영어점수를 입력하세요 : "); 
 			arrEng[i] = scan.nextInt();
 			System.out.println((i + 1) + " 번째 수학점수를 입력하세요 : ");
 			arrMath[i] = scan.nextInt();

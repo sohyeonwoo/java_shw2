@@ -23,3 +23,4 @@ System.out.print("입력된 숫자: ");
 	}
 
 }
+ 
