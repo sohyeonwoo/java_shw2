@@ -11,7 +11,7 @@ public class J0906_05로또당첨번호코드 {
 		int[] lotto = new int[45];   //전체번호
 		int[] winLotto = new int[6]; //당첨번호
 		int[] myNum = new int[6];    //입력번호
-		
+		int count =0;
 		// 1-45 번호입력 부분
 		for (int i = 0; i < lotto.length; i++) {
 			lotto[i] = i + 1;
@@ -40,10 +40,10 @@ public class J0906_05로또당첨번호코드 {
 
 		// 번호 출력
 		System.out.println("-----------------------------");
-		System.out.println("       로또 105호차 번호");
+		System.out.println("       로또 당첨 번호");
 		System.out.println("-----------------------------");
 		// 나의번호출력
-		System.out.print("◆ 나의입력번호 : ");
+		System.out.print("입력번호 : ");
 		for(int i=0;i<myNum.length;i++) {
 			System.out.print(myNum[i]+"  ");
 		}
@@ -54,6 +54,16 @@ public class J0906_05로또당첨번호코드 {
 		for (int i = 0; i < 6; i++) {
 			System.out.print(winLotto[i]+"  ");
 		} // for
+		for(int i =0;i<6;i++) {
+			for(int j=0;j<6;j++) {
+				if(winLotto[i]==myNum[j]) {
+					count++;
+					break; // j
+				}
+			}
+		}
+		System.out.println();
+		System.out.println("당첨개수 :" + count);
 		System.out.println();
 		
 		//당첨된 개수확인
