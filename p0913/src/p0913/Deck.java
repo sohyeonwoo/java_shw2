@@ -1,22 +1,22 @@
-package p0912;
+package p0913;
+
+import p0913.Card;
 
 public class Deck {
 
-	String[] shape = { "Heart", "Spade", "Diamind", "Clover" };
+	String[] shape = { "Diamond", "Heart", "Spade", "Clover" };
 	Card[] c = new Card[52];
 
-	Deck() { // 기본생성자
+	Deck() {
 		for (int i = 0; i < c.length; i++) {
-			//c[i] = new Card(shape[i/13],i%13+1); 아래와 같음
-			c[i] = new Card(); 
+			c[i] = new Card();
 			c[i].kind = shape[i / 13];
-			c[i].number = (i % 13)+1;
-//		System.out.println(c[i]);
+			c[i].number = i % 13 + 1;
 		}
 	}
+
 	Card pick(int nu) {
 		if (nu > 52) {
-			System.out.println("숫자를 잘못 선택하셨습니다.");
 			return c[nu % 52];
 		}
 		return c[nu];
@@ -30,21 +30,20 @@ public class Deck {
 	}
 
 	void shuffle() {
-		// 52 : 0~51
 		Card temp;
-		for (int i = 0; i < 1000; i++) {
-
+		for (int i = 0; i < 400; i++) {
 			int random = (int) (Math.random() * 52);
 			temp = c[0];
 			c[0] = c[random];
 			c[random] = temp;
-		} // for
-	}// void
-
-	void cardPrint() {
-		for (int i = 0; i < c.length; i++) {
-			System.out.println(c[i]);
 		}
 	}
 
-}// class
+//출력매소드
+	void cardPrint() {
+		for (int i = 0; i < 52; i++) {
+			System.out.println(c[i]);
+
+		}
+	}
+}
