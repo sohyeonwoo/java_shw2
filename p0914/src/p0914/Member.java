@@ -5,10 +5,10 @@ public class Member {
 	public Member() {
 	}
 
-	public Member(String id, String pw, String namae, String address, String phone) {
+	public Member(String id, String pw, String name, String address, String phone) {
 		this.id = id;
 		this.pw = pw;
-		this.name = namae;
+		this.name = name;
 		this.address = address;
 		this.phone = phone;
 	}

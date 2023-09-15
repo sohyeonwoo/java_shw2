@@ -7,12 +7,7 @@ public class Mem {
 		this.id = id;
 		this.pw = pw;
 	}
-	
-	
-	
 	String id;
 	String pw;
-	
-	
 
 }
