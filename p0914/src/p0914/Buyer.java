@@ -20,10 +20,17 @@ public class Buyer {
 	ArrayList list= new ArrayList(); //컬렉션 프레임워크
 	
 	int i=0;
-	void buy(Product p) {
+	int buy(Product p) {
+		//상품금액이 현재잔액보다 큰 경우
+		if(money<p.price) {
+			System.out.println("잔액이 부족합니다.");
+			System.out.println("");
+			return 0; // 구매실패
+		}
 		money -= p.price;
 		bonusPoint += p.bonusPoint;
 		list.add(p);
+		return 1;//구매성공
 //		cart[i] = p; //p를 Product[] 배열에 담음.
 //		i++;
 	}
