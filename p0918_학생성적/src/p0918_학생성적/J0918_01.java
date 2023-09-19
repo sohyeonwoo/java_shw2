@@ -7,7 +7,7 @@ public class J0918_01 {
 		Scanner scan = new Scanner(System.in);
 		StuAction stuAction = new StuAction();
 		int stucount = 1;
-		String[]title = 
+		String[]title ;
 	}
 	
 
