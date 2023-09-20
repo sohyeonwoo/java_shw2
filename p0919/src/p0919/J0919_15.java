@@ -21,17 +21,18 @@ public class J0919_15 {
 
 		while (true) {
 			int read = fis.read();
-			int read2 = fis2.read();
-			if (read == -1)
-				break;
+			if (read == -1) break;
 			fos.write(read);
-			fos.write(read2);
+			int read2 = fis2.read();
+			if (read2 == -1) break;
+				
+			fos2.write(read2);
 
 		}
 		fis.close();
-		fis2.close();
+		
 		fos.close();
-		fos2.close();
+		
 
 	}
 
