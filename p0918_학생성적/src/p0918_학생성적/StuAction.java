@@ -43,8 +43,8 @@ public class StuAction {
 			int eng = scan.nextInt();
 			System.out.println("수학점수를 입력하세요.");
 			int math = scan.nextInt();
-			list.add(new.StuScore(name,kor,eng,math));
-			System.out.println("%d 번째 학생성적이 저장되었습니다. \n",stuCount);
+			list.add(new StuScore(name,kor,eng,math));
+			System.out.printf("%d 번째 학생성적이 저장되었습니다. \n",stuCount);
 			System.out.println();
 			stuCount++;
 		}
@@ -60,7 +60,7 @@ public class StuAction {
 			System.out.printf("%s\t",title[i]);
 		}
 		System.out.println("%d\\t%s\\t%d\\t%d\\t%d\\t%d\\t%.2f\\t%d\\n");
-		s.
+		
 		
 	
 	}
